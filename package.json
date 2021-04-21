@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Hyderabad and all other places in india for covid resources information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "covid",
+    "angular",
+    "node",
+    "sql",
+    "india",
+    "sarc",
+    "covid-19"
+  ],
+  "author": "Harshal Raverkar",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "moment": "^2.29.1",
+    "mssql": "^6.3.1",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "sequelize": "^6.5.0",
+    "tedious": "^6.7.0",
+    "uuid": "^3.4.0"
+  }
+}

@@ -5,8 +5,6 @@ const Sequelize = require('sequelize');
 const cors = require('cors');
 var Config = require('./config');
 
-
-
 app.use(express.urlencoded({
   extended: true,
   limit: "5mb"
@@ -17,7 +15,7 @@ app.use(express.json({
 }));
 app.use(cors());
 
-const sequelize = new Sequelize("covidresources", "sa", "Admin1234!", {
+const sequelize = new Sequelize(Config.database, Config.user, Config.password, {
   host:"127.0.0.1", dialect: "mssql"
 });
 

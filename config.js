@@ -1,8 +1,8 @@
 var config = require("./config");
 config.user = "sa";
 config.password = "Admin12345!"; 
-config.server = "localhost";
-config.database = "covidresources";
+config.server = "127.0.0.1";
+config.database = "CovidResource";
 config.port = 1433;
 config.accessTokenTimeOut = "1"; // time out in hour.
 config.dialect = "mssql"
@@ -15,6 +15,6 @@ config.sqlConfig = {
   port: config.port,
 };
 
-config.unsecureport = 4200;
+config.unsecureport = 7272;
 
 module.exports = config;

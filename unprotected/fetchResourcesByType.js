@@ -17,14 +17,14 @@ module.exports = function (sequelize) {
             })
             .catch((error) => {
               let errMessage = {
-                message: "Server encountered error in fetching property details",
+                message: "Server encountered error in fetching resource by type details",
               };
               common.cacheHeader(res, errMessage);
               res.send(errMessage);
             });
         } catch (error) {
           let errMessage = {
-            message: "Server encountered error in fetching property details",
+            message: "Server encountered error in fetching resource by type details",
           };
           common.cacheHeader(res, errMessage);
           res.send(errMessage);

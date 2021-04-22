@@ -6,6 +6,12 @@ module.exports = function (sequelize, config, app, Sequelize) {
 
   const getResources = require("./getResources")(sequelize, config, app, Sequelize);
   unprotectedRouter.use("/getResources", getResources);
+
+  const fetchResourcesType = require("./fetchResources")(sequelize, config, app, Sequelize);
+  unprotectedRouter.use("/fetchResources", fetchResourcesType);
+
+  const fetchResourcesByType = require("./fetchResourcesByType")(sequelize, config, app, Sequelize);
+  unprotectedRouter.use("/fetchResourcesByType", fetchResourcesByType);
   
   return unprotectedRouter;
 };

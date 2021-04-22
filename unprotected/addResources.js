@@ -64,16 +64,18 @@ module.exports = function (sequelize) {
             })
       .then(function (result) {
         let mesg;
-        if (result.id !== null) mesg = "Successfully saved user added";
+        if (result.id !== null) mesg = "Resources Successfully added";
         else mesg = "Server encountered error while inserting annotations";
         res.send({
           message: mesg,
+          status:200
         });
       })
       .catch((error) => {
         console.log(error);
         res.send({
           message: "Server encountered error while inserting annotations",
+          status:500
         });
       });
   }

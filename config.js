@@ -7,6 +7,8 @@ config.port = 1433;
 config.accessTokenTimeOut = "1"; // time out in hour.
 config.dialect = "mssql"
 
+config.hostname = 'postgres://postgres:root@127.0.0.1:5432/CovidResource';
+
 config.sqlConfig = {
   user: config.user,
   password: config.password,

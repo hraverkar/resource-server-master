@@ -22,9 +22,11 @@ app.use(express.json({
 }));
 app.use(cors());
 
-const sequelize = new Sequelize(Config.database, Config.user, Config.password, {
-  host:"127.0.0.1", dialect: "mssql"
-});
+var sequelize = new Sequelize(Config.hostname);
+
+// const sequelize = new Sequelize(Config.database, Config.user, Config.password, {
+//   host:"127.0.0.1", dialect: "mssql"
+// });
 
 sequelize
   .authenticate()

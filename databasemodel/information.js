@@ -1,7 +1,7 @@
 module.exports = function (sequelize) {
   const Sequelize = require("sequelize");
   var informationModel = sequelize.define(
-    "infromation",
+    "information",
     {
       id: { type: Sequelize.STRING, primaryKey: true },
       typeid: Sequelize.STRING,
